@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>SSO登陆系统</h1>
+<span>用户名</span><input id="username" type="text" name="username">
+<p>
+<span>密&nbsp;码</span><input id="password" type="text" name="password">
+</p>
+<p>
+ <button type="submit" id="sub-btn" >提交</button>
+</p>
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script>
+
+$("#sub-btn").on('click',function () {
+    var username = $("#username").val();
+    var password = $("#password").val();
+
+    $.ajax({
+        url: 'login',
+        type: 'get',
+        dataType: 'json',
+        data:{
+            username:username,
+            password:password
+        },
+        success:function (res) {
+            alert(res);
+        },
+        error:function (res) {
+            alert(res)
+        }
+    });
+
+})
+
+</script>
+</html>

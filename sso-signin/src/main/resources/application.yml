@@ -1,0 +1,23 @@
+server:
+  port: 8011
+  error:
+    path: /error.html
+
+
+spring:
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/static/front/
+    cache: false
+  redis:
+    database: 0
+    port: 6379
+    host: 120.78.161.231
+    password:
+    timeout: 6000ms
+    jedis:
+      pool:
+        max-active: 1000
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 5
