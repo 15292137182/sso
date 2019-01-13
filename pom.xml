@@ -16,6 +16,7 @@
     <modules>
         <module>sso-signin</module>
         <module>sso-client1</module>
+        <module>sso-client2</module>
     </modules>
 
 </project>

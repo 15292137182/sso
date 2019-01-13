@@ -1,5 +1,5 @@
 server:
-  port: 8012
+  port: 8013
   error:
     path: /error.html
 
@@ -14,7 +14,7 @@ spring:
     port: 6379
     host: 120.78.161.231
     password:
-    timeout: 20000ms
+    timeout: 10000ms
     jedis:
       pool:
         max-active: 1000

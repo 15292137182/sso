@@ -1,4 +1,4 @@
-package cn.wentiehu.client1.controller;
+package cn.wentiehu.client2.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +14,6 @@ public class Client1Controller {
 
     @RequestMapping("client1")
     public String client() {
-        return "";
+        return "client1";
     }
 }
